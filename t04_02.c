@@ -7,12 +7,14 @@
 int main(int _argv, char **_argc) {
   char input[21];
   fgets(input, sizeof(input), stdin);
-  input[strcspn(input, "\n")] = 0;
+  
+  input[strcspn(input, "\n")] = 0; 
+  
   for (int i = 0; i < strlen(input); i++) {
-  printf("%03d", input[i]);
+    printf("%03d", input[i]);
   }
-
-  printf("\n");
-
+  
+  printf("013\n"); 
+  
   return 0;
 }
